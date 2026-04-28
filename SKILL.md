@@ -1,30 +1,30 @@
-        ---
-        name: "r00-qdhenry-Claude-Command-Suite--datascience"
-        description: >
-          🤖 Data Science & AI/ML skill suite derived from qdhenry/Claude-Command-Suite.
-          Data pipelines, model training, evaluation, MLOps and analytical reporting.
-          Provides 10 specialised commands for data-science, machine-learning, analytics workflows.
-        version: "1.0.0"
-        domain: datascience
-        tags: ["data-science", "machine-learning", "analytics", "pandas", "mlops"]
-        source: "https://github.com/qdhenry/Claude-Command-Suite"
-        license: MIT
-        ---
+---
+name: "r00-qdhenry-Claude-Command-Suite--datascience"
+description: >
+  🤖 Data Science & AI/ML skill suite derived from qdhenry/Claude-Command-Suite.
+  Data pipelines, model training, evaluation, MLOps and analytical reporting.
+  Provides 10 specialised commands for data-science, machine-learning, analytics workflows.
+version: "1.0.0"
+domain: datascience
+tags: ["data-science", "machine-learning", "analytics", "pandas", "mlops"]
+source: "https://github.com/qdhenry/Claude-Command-Suite"
+license: MIT
+---
 
-        # 🤖 Data Science & AI/ML Skill Suite
+# 🤖 Data Science & AI/ML Skill Suite
 
-        > Derived from **qdhenry/Claude-Command-Suite** · Focus: _216 commands, 12 skills, 54 agents, structured workflows_
+> Derived from **qdhenry/Claude-Command-Suite** · Focus: _216 commands, 12 skills, 54 agents, structured workflows_
 
-        ## Overview
+## Overview
 
-        This skill provides 10 production-ready commands tailored for
-        **Data Science & AI/ML** workflows. All commands follow a consistent
-        interaction pattern with structured output, progress tracking and
-        actionable recommendations.
+This skill provides 10 production-ready commands tailored for
+**Data Science & AI/ML** workflows. All commands follow a consistent
+interaction pattern with structured output, progress tracking and
+actionable recommendations.
 
-        ## Available Commands
+## Available Commands
 
-        - `/data-profiling` — Automated EDA report: distributions, nulls, outliers, correlations and drift
+- `/data-profiling` — Automated EDA report: distributions, nulls, outliers, correlations and drift
 - `/feature-engineer` — Feature importance analysis with SHAP values and automated encoding recipes
 - `/model-evaluate` — Model performance dashboard: ROC, PR curves, confusion matrix and bias check
 - `/pipeline-scaffold` — Modular ML pipeline scaffold with versioning, logging and registry hooks
@@ -35,44 +35,44 @@
 - `/llm-eval` — LLM output evaluation harness: hallucination rate, faithfulness and latency
 - `/anomaly-detect` — Time-series anomaly detection with root-cause attribution and alert tuning
 
-        ## Interaction Pattern
+## Interaction Pattern
 
-        Every command follows this structured response format:
+Every command follows this structured response format:
 
-        ```
-        1. CONTEXT CHECK   — Verify inputs and confirm scope with user
-        2. ANALYSIS        — Deep analysis with live progress display
-        3. FINDINGS TABLE  — Structured results with severity / priority
-        4. RECOMMENDATIONS — Prioritised action list (quick wins first)
-        5. NEXT STEPS      — Suggested follow-up commands
-        ```
+```
+1. CONTEXT CHECK   — Verify inputs and confirm scope with user
+2. ANALYSIS        — Deep analysis with live progress display
+3. FINDINGS TABLE  — Structured results with severity / priority
+4. RECOMMENDATIONS — Prioritised action list (quick wins first)
+5. NEXT STEPS      — Suggested follow-up commands
+```
 
-        ## UI Conventions
+## UI Conventions
 
-        | Symbol | Meaning              |
-        |--------|----------------------|
-        | ✓      | Passed / complete    |
-        | ✗      | Failed / critical    |
-        | ⚠      | Warning / review     |
-        | ⟳      | In progress          |
-        | ░      | Pending              |
-        | 🔴     | Critical severity    |
-        | 🟠     | High severity        |
-        | 🟡     | Medium severity      |
-        | 🟢     | Low / informational  |
+| Symbol | Meaning              |
+|--------|----------------------|
+| ✓      | Passed / complete    |
+| ✗      | Failed / critical    |
+| ⚠      | Warning / review     |
+| ⟳      | In progress          |
+| ░      | Pending              |
+| 🔴     | Critical severity    |
+| 🟠     | High severity        |
+| 🟡     | Medium severity      |
+| 🟢     | Low / informational  |
 
-        Progress bars use block characters:
-        `[████████░░] 80%`
+Progress bars use block characters:
+`[████████░░] 80%`
 
-        ## Quick Start
+## Quick Start
 
-        ```bash
-        # Install this skill
-        cp -r . ~/.claude/skills/r00-qdhenry-Claude-Command-Suite--datascience/
+```bash
+# Install this skill
+cp -r . ~/.claude/skills/r00-qdhenry-Claude-Command-Suite--datascience/
 
-        # In Claude Code
-        /read ~/.claude/skills/r00-qdhenry-Claude-Command-Suite--datascience/SKILL.md
-        ```
+# In Claude Code
+/read ~/.claude/skills/r00-qdhenry-Claude-Command-Suite--datascience/SKILL.md
+```
 
-        Then simply describe your task and Claude will route to the
-        appropriate command automatically.
+Then simply describe your task and Claude will route to the
+appropriate command automatically.
